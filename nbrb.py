@@ -54,7 +54,7 @@ def curse_per_week():
     usd.grid()
     plt.suptitle('Курсы валют EUR и USD по отношению к BYN')
     plt.savefig('График.png')
-    # plt.show()
+    plt.show()
 
 
 # curse_per_week()
