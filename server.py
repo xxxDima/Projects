@@ -34,27 +34,26 @@ def curse_per_week():
             break
 
     eur = plt.subplot(2, 1, 1)
-    plt.plot(x, y, '-ob')
+    plt.plot(x, y, '-or')
     plt.legend(['Курс EUR'])
     eur.tick_params(pad=1,  # Расстояние между черточкой и ее подписью
                     labelsize=6,  # Размер подписи
-                    labelcolor='b',  # Цвет подписи
+                    labelcolor='r',  # Цвет подписи
                     labelrotation=60)  # Поворот подписей
     plt.subplots_adjust(hspace=0.4)
 
     usd = plt.subplot(2, 1, 2)
-    plt.plot(x, y_usd, '-og')
+    plt.plot(x, y_usd, '-ob')
     plt.legend(['Курс USD'])
     usd.tick_params(pad=1,  # Расстояние между черточкой и ее подписью
                     labelsize=6,  # Размер подписи
-                    labelcolor='g',  # Цвет подписи
+                    labelcolor='b',  # Цвет подписи
                     labelrotation=60)  # Поворот подписей
 
     eur.grid()
     usd.grid()
     plt.suptitle('Курсы валют EUR и USD по отношению к BYN')
-    plt.savefig('График.png')
-    # plt.show()
+    plt.show()
 
 
-# curse_per_week()
+curse_per_week()

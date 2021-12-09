@@ -11,11 +11,11 @@ client = telebot.TeleBot(token)
 
 @client.message_handler(commands=['start'])
 def start(message):
-    chat_id = []
+    # chat_id = []
     client.send_message(message.chat.id, 'Меня создал красавчик Дмитрий ;)\n /help, чтобы узнать что я умею')
-    for i in [message.chat.id]:
-        chat_id.append(i)
-    print(chat_id)
+    # for i in [message.chat.id]:
+    #     chat_id.append(i)
+    # print(chat_id)
 
 
 @client.message_handler(commands=['help'])
