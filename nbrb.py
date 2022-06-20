@@ -6,6 +6,7 @@ from datetime import date
 
 
 def curse_per_week():
+    """Создает график курса валют Евро и Доллара НБРБ за последний месяц"""
     x = []
     y = []
     y_usd = []
@@ -53,7 +54,7 @@ def curse_per_week():
     eur.grid()
     usd.grid()
     plt.suptitle('Курсы валют EUR и USD по отношению к BYN')
-    plt.savefig('График.png')
+    plt.savefig('schedule.png')
     # plt.show()
 
 
